@@ -1,5 +1,7 @@
-package Graph;
-import java.util.*;
+package Kruskal;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class Graph {
 

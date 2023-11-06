@@ -1,4 +1,4 @@
-package Graph;
+package Kruskal;
 
 public class Edge implements Comparable<Edge> {
     public int u;
