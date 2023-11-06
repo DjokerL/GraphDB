@@ -1,10 +1,10 @@
-package Kruskal;
+package Graph;
 import java.util.*;
 
 public class Graph {
 
-    List<Edge> edges;
-    int vertices; // number of vertices in graph
+    public List<Edge> edges;
+    public int vertices; // number of vertices in graph
 
     public Graph(int vertices) {
         this.vertices = vertices;
@@ -14,6 +14,5 @@ public class Graph {
     public void addEdge(int u, int v, int weight) {
         edges.add(new Edge(u,v,weight));
     }
-
 
 }

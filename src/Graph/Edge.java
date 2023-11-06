@@ -1,11 +1,11 @@
-package Kruskal;
+package Graph;
 
-class Edge implements Comparable<Edge> {
-    int u;
-    int v;
-    int weight;
+public class Edge implements Comparable<Edge> {
+    public int u;
+    public int v;
+    public int weight;
 
-    Edge(int u, int v, int weight) {
+    public Edge(int u, int v, int weight) {
         this.u = u;
         this.v = v;
         this.weight = weight;

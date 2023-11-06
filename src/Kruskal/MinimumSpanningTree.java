@@ -1,4 +1,7 @@
 package Kruskal;
+import Graph.Edge;
+import Graph.Graph;
+
 import java.util.*;
 
 public class MinimumSpanningTree {

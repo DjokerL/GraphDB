@@ -1,5 +1,7 @@
 package Kruskal;
 
+import Graph.Graph;
+
 public class Driver {
     public static void main(String[] args) {
         var graph = new Graph(5);
