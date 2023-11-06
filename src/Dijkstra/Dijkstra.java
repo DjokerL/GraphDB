@@ -4,16 +4,23 @@ import java.util.*;
 
 public class Dijkstra {
     private final Graph graph;
-    private int start;
     private int[] distances;
 
-    public Dijkstra(Graph graph, int start) {
+    public Dijkstra(Graph graph) {
         this.graph = graph;
-        distances = new int[graph.vertices];
-        Arrays.fill(distances, Integer.MAX_VALUE);
     }
 
-    private void dijkstra() {
+    public void printDistances(int start) {
+        dijkstra(start);
+        for (int i = 0; i < distances.length; i++) {
+            System.out.println("distance from " + start + "to " + i + " is: " + distances[i]);
+        }
+    }
+
+    private void dijkstra(int start) {
+        distances = new int[graph.vertices];
+        Arrays.fill(distances, Integer.MAX_VALUE);
+
         distances[start] = 0;
 
         var queue = new PriorityQueue<Pair>();
